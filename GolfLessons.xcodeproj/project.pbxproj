@@ -8,22 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		39A0BD471C7E4ABF001E8354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD461C7E4ABF001E8354 /* AppDelegate.swift */; };
-		39A0BD491C7E4ABF001E8354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD481C7E4ABF001E8354 /* ViewController.swift */; };
 		39A0BD4C1C7E4ABF001E8354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A0BD4A1C7E4ABF001E8354 /* Main.storyboard */; };
 		39A0BD4F1C7E4ABF001E8354 /* GolfLessons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD4D1C7E4ABF001E8354 /* GolfLessons.xcdatamodeld */; };
 		39A0BD511C7E4ABF001E8354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A0BD501C7E4ABF001E8354 /* Assets.xcassets */; };
 		39A0BD541C7E4ABF001E8354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A0BD521C7E4ABF001E8354 /* LaunchScreen.storyboard */; };
+		39A0BD5C1C7E4B9B001E8354 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD5B1C7E4B9B001E8354 /* MainTableViewController.swift */; };
+		39A0BD6C1C7E4C0A001E8354 /* AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD5E1C7E4C0A001E8354 /* AlertOperation.swift */; };
+		39A0BD6D1C7E4C0A001E8354 /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD5F1C7E4C0A001E8354 /* BlockObserver.swift */; };
+		39A0BD6E1C7E4C0A001E8354 /* ExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD601C7E4C0A001E8354 /* ExclusivityController.swift */; };
+		39A0BD6F1C7E4C0A001E8354 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD611C7E4C0A001E8354 /* GroupOperation.swift */; };
+		39A0BD701C7E4C0A001E8354 /* MutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD621C7E4C0A001E8354 /* MutuallyExclusive.swift */; };
+		39A0BD711C7E4C0A001E8354 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD631C7E4C0A001E8354 /* NetworkObserver.swift */; };
+		39A0BD721C7E4C0A001E8354 /* NSLock+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD641C7E4C0A001E8354 /* NSLock+Operations.swift */; };
+		39A0BD731C7E4C0A001E8354 /* NSOperation+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD651C7E4C0A001E8354 /* NSOperation+Operations.swift */; };
+		39A0BD741C7E4C0A001E8354 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD661C7E4C0A001E8354 /* Operation.swift */; };
+		39A0BD751C7E4C0A001E8354 /* OperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD671C7E4C0A001E8354 /* OperationCondition.swift */; };
+		39A0BD761C7E4C0A001E8354 /* OperationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD681C7E4C0A001E8354 /* OperationErrors.swift */; };
+		39A0BD771C7E4C0A001E8354 /* OperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD691C7E4C0A001E8354 /* OperationObserver.swift */; };
+		39A0BD781C7E4C0A001E8354 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD6A1C7E4C0A001E8354 /* OperationQueue.swift */; };
+		39A0BD791C7E4C0A001E8354 /* ReachabilityCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD6B1C7E4C0A001E8354 /* ReachabilityCondition.swift */; };
+		39A0BD7B1C7E4D71001E8354 /* LoadModelOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD7A1C7E4D71001E8354 /* LoadModelOperation.swift */; };
+		39A0BD801C7E4F1B001E8354 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD7C1C7E4F1B001E8354 /* Customer+CoreDataProperties.swift */; };
+		39A0BD811C7E4F1B001E8354 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD7D1C7E4F1B001E8354 /* Customer.swift */; };
+		39A0BD821C7E4F1B001E8354 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD7E1C7E4F1B001E8354 /* Lesson+CoreDataProperties.swift */; };
+		39A0BD831C7E4F1B001E8354 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0BD7F1C7E4F1B001E8354 /* Lesson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39A0BD431C7E4ABF001E8354 /* GolfLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A0BD461C7E4ABF001E8354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39A0BD481C7E4ABF001E8354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39A0BD4B1C7E4ABF001E8354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39A0BD4E1C7E4ABF001E8354 /* GolfLessons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GolfLessons.xcdatamodel; sourceTree = "<group>"; };
 		39A0BD501C7E4ABF001E8354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A0BD531C7E4ABF001E8354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39A0BD551C7E4ABF001E8354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A0BD5B1C7E4B9B001E8354 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		39A0BD5E1C7E4C0A001E8354 /* AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOperation.swift; sourceTree = "<group>"; };
+		39A0BD5F1C7E4C0A001E8354 /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
+		39A0BD601C7E4C0A001E8354 /* ExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExclusivityController.swift; sourceTree = "<group>"; };
+		39A0BD611C7E4C0A001E8354 /* GroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOperation.swift; sourceTree = "<group>"; };
+		39A0BD621C7E4C0A001E8354 /* MutuallyExclusive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutuallyExclusive.swift; sourceTree = "<group>"; };
+		39A0BD631C7E4C0A001E8354 /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
+		39A0BD641C7E4C0A001E8354 /* NSLock+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Operations.swift"; sourceTree = "<group>"; };
+		39A0BD651C7E4C0A001E8354 /* NSOperation+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperation+Operations.swift"; sourceTree = "<group>"; };
+		39A0BD661C7E4C0A001E8354 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		39A0BD671C7E4C0A001E8354 /* OperationCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCondition.swift; sourceTree = "<group>"; };
+		39A0BD681C7E4C0A001E8354 /* OperationErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationErrors.swift; sourceTree = "<group>"; };
+		39A0BD691C7E4C0A001E8354 /* OperationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationObserver.swift; sourceTree = "<group>"; };
+		39A0BD6A1C7E4C0A001E8354 /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		39A0BD6B1C7E4C0A001E8354 /* ReachabilityCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityCondition.swift; sourceTree = "<group>"; };
+		39A0BD7A1C7E4D71001E8354 /* LoadModelOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadModelOperation.swift; sourceTree = "<group>"; };
+		39A0BD7C1C7E4F1B001E8354 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		39A0BD7D1C7E4F1B001E8354 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		39A0BD7E1C7E4F1B001E8354 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		39A0BD7F1C7E4F1B001E8354 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +94,50 @@
 		39A0BD451C7E4ABF001E8354 /* GolfLessons */ = {
 			isa = PBXGroup;
 			children = (
-				39A0BD461C7E4ABF001E8354 /* AppDelegate.swift */,
-				39A0BD481C7E4ABF001E8354 /* ViewController.swift */,
+				39A0BD841C7E4F23001E8354 /* Model */,
+				39A0BD5D1C7E4BCD001E8354 /* Operations */,
 				39A0BD4A1C7E4ABF001E8354 /* Main.storyboard */,
+				39A0BD461C7E4ABF001E8354 /* AppDelegate.swift */,
+				39A0BD5B1C7E4B9B001E8354 /* MainTableViewController.swift */,
 				39A0BD501C7E4ABF001E8354 /* Assets.xcassets */,
 				39A0BD521C7E4ABF001E8354 /* LaunchScreen.storyboard */,
 				39A0BD551C7E4ABF001E8354 /* Info.plist */,
 				39A0BD4D1C7E4ABF001E8354 /* GolfLessons.xcdatamodeld */,
 			);
 			path = GolfLessons;
+			sourceTree = "<group>";
+		};
+		39A0BD5D1C7E4BCD001E8354 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				39A0BD5E1C7E4C0A001E8354 /* AlertOperation.swift */,
+				39A0BD5F1C7E4C0A001E8354 /* BlockObserver.swift */,
+				39A0BD601C7E4C0A001E8354 /* ExclusivityController.swift */,
+				39A0BD7A1C7E4D71001E8354 /* LoadModelOperation.swift */,
+				39A0BD611C7E4C0A001E8354 /* GroupOperation.swift */,
+				39A0BD621C7E4C0A001E8354 /* MutuallyExclusive.swift */,
+				39A0BD631C7E4C0A001E8354 /* NetworkObserver.swift */,
+				39A0BD641C7E4C0A001E8354 /* NSLock+Operations.swift */,
+				39A0BD651C7E4C0A001E8354 /* NSOperation+Operations.swift */,
+				39A0BD661C7E4C0A001E8354 /* Operation.swift */,
+				39A0BD671C7E4C0A001E8354 /* OperationCondition.swift */,
+				39A0BD681C7E4C0A001E8354 /* OperationErrors.swift */,
+				39A0BD691C7E4C0A001E8354 /* OperationObserver.swift */,
+				39A0BD6A1C7E4C0A001E8354 /* OperationQueue.swift */,
+				39A0BD6B1C7E4C0A001E8354 /* ReachabilityCondition.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		39A0BD841C7E4F23001E8354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39A0BD7C1C7E4F1B001E8354 /* Customer+CoreDataProperties.swift */,
+				39A0BD7D1C7E4F1B001E8354 /* Customer.swift */,
+				39A0BD7E1C7E4F1B001E8354 /* Lesson+CoreDataProperties.swift */,
+				39A0BD7F1C7E4F1B001E8354 /* Lesson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +211,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A0BD751C7E4C0A001E8354 /* OperationCondition.swift in Sources */,
+				39A0BD6C1C7E4C0A001E8354 /* AlertOperation.swift in Sources */,
+				39A0BD821C7E4F1B001E8354 /* Lesson+CoreDataProperties.swift in Sources */,
+				39A0BD6E1C7E4C0A001E8354 /* ExclusivityController.swift in Sources */,
 				39A0BD4F1C7E4ABF001E8354 /* GolfLessons.xcdatamodeld in Sources */,
-				39A0BD491C7E4ABF001E8354 /* ViewController.swift in Sources */,
+				39A0BD761C7E4C0A001E8354 /* OperationErrors.swift in Sources */,
+				39A0BD781C7E4C0A001E8354 /* OperationQueue.swift in Sources */,
+				39A0BD5C1C7E4B9B001E8354 /* MainTableViewController.swift in Sources */,
+				39A0BD711C7E4C0A001E8354 /* NetworkObserver.swift in Sources */,
+				39A0BD721C7E4C0A001E8354 /* NSLock+Operations.swift in Sources */,
+				39A0BD801C7E4F1B001E8354 /* Customer+CoreDataProperties.swift in Sources */,
+				39A0BD7B1C7E4D71001E8354 /* LoadModelOperation.swift in Sources */,
+				39A0BD811C7E4F1B001E8354 /* Customer.swift in Sources */,
+				39A0BD6F1C7E4C0A001E8354 /* GroupOperation.swift in Sources */,
 				39A0BD471C7E4ABF001E8354 /* AppDelegate.swift in Sources */,
+				39A0BD731C7E4C0A001E8354 /* NSOperation+Operations.swift in Sources */,
+				39A0BD6D1C7E4C0A001E8354 /* BlockObserver.swift in Sources */,
+				39A0BD791C7E4C0A001E8354 /* ReachabilityCondition.swift in Sources */,
+				39A0BD701C7E4C0A001E8354 /* MutuallyExclusive.swift in Sources */,
+				39A0BD741C7E4C0A001E8354 /* Operation.swift in Sources */,
+				39A0BD771C7E4C0A001E8354 /* OperationObserver.swift in Sources */,
+				39A0BD831C7E4F1B001E8354 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
