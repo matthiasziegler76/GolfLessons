@@ -1,8 +1,8 @@
 //
-//  Customer+CoreDataProperties.swift
+//  LessonType+CoreDataProperties.swift
 //  GolfLessons
 //
-//  Created by Matthias Ziegler on 13.06.16.
+//  Created by Matthias Ziegler on 14.06.16.
 //  Copyright © 2016 Matthias Ziegler. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,11 +12,9 @@
 import Foundation
 import CoreData
 
-extension Customer {
+extension LessonType {
 
-    @NSManaged var firstName: String?
-    @NSManaged var lastName: String?
-    @NSManaged var kurse: NSSet?
+    @NSManaged var type: String?
     @NSManaged var lessons: NSSet?
 
 }

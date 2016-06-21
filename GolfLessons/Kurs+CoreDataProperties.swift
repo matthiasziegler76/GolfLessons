@@ -1,5 +1,5 @@
 //
-//  Customer+CoreDataProperties.swift
+//  Kurs+CoreDataProperties.swift
 //  GolfLessons
 //
 //  Created by Matthias Ziegler on 13.06.16.
@@ -12,11 +12,11 @@
 import Foundation
 import CoreData
 
-extension Customer {
+extension Kurs {
 
-    @NSManaged var firstName: String?
-    @NSManaged var lastName: String?
-    @NSManaged var kurse: NSSet?
-    @NSManaged var lessons: NSSet?
+    @NSManaged var date: NSDate?
+    @NSManaged var pricePerPerson: NSNumber?
+    @NSManaged var theme: String?
+    @NSManaged var customers: NSSet?
 
 }
